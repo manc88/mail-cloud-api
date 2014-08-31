@@ -34,3 +34,7 @@ cloud.move("what/to/move.txt" "where/to/move/")
 #rename anything
 cloud.rename("folder1/folder2", "folder1/newfolder2name")
 
+----------------------------------------------------
+#to logout
+cloud.logout()
+

@@ -1,17 +1,17 @@
 mail-cloud-api
-==============
+cloud.mail.ru  APIs over http
 
-mail.u cloud APIs
+###########################################
+#LIBS
+requests lib needed
+$ pip install requests
+############################################
 
 #Examples
 
-
 import mailcloudapi
-
 cloud = mailcloudapi.Cloud("youremail@mail.ru" , "yourpassword")
-
 cloud.login()
-
 
 #load file to the cloud
 cloud.add_file("/home/documents/file.txt" , "my_backup/myfiles/") 

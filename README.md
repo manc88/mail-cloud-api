@@ -1,38 +1,38 @@
-##mail-cloud-api
+## mail-cloud-api
 cloud.mail.ru  APIs over http
 
-#LIBS
+# LIBS
 requests lib needed
 $ pip install requests
 
-#Examples
+# Examples
 
 import mailcloudapi
 cloud = mailcloudapi.Cloud("youremail@mail.ru" , "yourpassword")
 cloud.login()
 
-#load file to the cloud
+# load file to the cloud
 cloud.add_file("/home/documents/file.txt" , "my_backup/myfiles/") 
 
-#create folder 
+# create folder 
 cloud.add_folder("/cat1/cat2")
 
-#remove anything 
+# remove anything 
 cloud.remove("my_backup/myfiles/file.txt")
 
-#share the file
+# share the file
 cloud.share("my_backup/myfiles/file.txt")
 
-#unshare the file
+# unshare the file
 cloud.unshare("my_backup/myfiles/file.txt")
 
-#move anything anywhere
+# move anything anywhere
 cloud.move("what/to/move.txt" "where/to/move/")
 
-#rename anything
+# rename anything
 cloud.rename("folder1/folder2", "folder1/newfolder2name")
 
 ----------------------------------------------------
-#to logout
+# to logout
 cloud.logout()
 

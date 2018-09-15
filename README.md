@@ -3,9 +3,9 @@
 
 ###### LIBS
 requests lib needed
-
+```
 $pip install requests
-
+```
 ###### Examples
 ```
 import mailcloudapi

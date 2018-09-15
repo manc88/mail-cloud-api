@@ -1,11 +1,9 @@
-mail-cloud-api
+##mail-cloud-api
 cloud.mail.ru  APIs over http
 
-###########################################
 #LIBS
 requests lib needed
 $ pip install requests
-############################################
 
 #Examples
 

@@ -65,7 +65,7 @@ class Cloud():
 
         ls = self.response.text.split(";")
 
-        if self.response.status_code == requests.codes. and ls:
+        if self.response.status_code == requests.codes.ok and ls:
             return {"name": ls[1].strip(),
                     "hash": ls[0].strip(),
                     "size": ls[2].strip()
